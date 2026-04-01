@@ -1,83 +1,83 @@
 # TH B UI Skill
 
-TH B UI Skill is a reusable skill for generating enterprise admin UI prototypes.
+TH B UI Skill 是一个用于生成企业后台原型界面的可复用 skill。
 
-It helps AI produce interfaces that feel structured, restrained, and operational by encoding page patterns, interface semantics, and UI specification rules. The focus is on design language and page structure rather than any single technical implementation.
+它通过沉淀页面结构、界面语义和 UI 规范，帮助 AI 生成更规整、更克制、更符合企业后台场景的界面，而不是泛化的消费级页面。它关注的是设计语言和页面结构，而不是某一种具体技术实现。
 
-## Highlights
+## 特性
 
-- Enterprise-style list, detail, form, drawer, and dashboard patterns
-- Clear rules for color usage, button hierarchy, forms, tables, and states
-- Reusable prompts for prototype text, Figma prompts, and frontend code
-- Skill-marketplace-friendly structure with `SKILL.md` and `agents/openai.yaml`
-- GitHub-friendly repository layout for sharing and versioning
+- 支持企业后台常见的列表页、详情页、表单页、抽屉页、仪表盘模式
+- 内置颜色、按钮、表单、表格、状态和交互规则
+- 适合生成原型描述、Figma 提示词、前端页面代码
+- 兼容 skill 平台常见结构，包含 `SKILL.md` 和 `agents/openai.yaml`
+- 适合通过 GitHub 仓库进行分享、维护和发布
 
-## Quick Start
+## 快速开始
 
-Reference the skill directly in your prompt:
+在提示词中直接引用这个 skill：
 
 ```text
-Use $th-b-ui-skill to design a desktop enterprise prototype with compact spacing, neutral surfaces, clear button hierarchy, and stable table behavior.
+请用 $th-b-ui-skill 生成一个企业后台原型，要求界面紧凑、配色克制、按钮层级清晰、表格行为稳定。
 ```
 
-For better results, also provide:
+为了获得更好的结果，建议同时补充：
 
-- page type
-- key sections
-- major fields
-- table columns
-- primary and secondary actions
-- whether you want prototype text, a Figma prompt, or frontend code
+- 页面类型
+- 关键模块
+- 主要字段
+- 表格列
+- 主次操作按钮
+- 你希望输出的是原型描述、Figma 提示词，还是前端代码
 
-## Example Prompts
-
-```text
-Use $th-b-ui-skill to design a desktop admin list page for resource management. Keep the page structured with a filter panel, action area, data table, status tags, and pagination.
-```
+## 示例提示词
 
 ```text
-Use $th-b-ui-skill to create an approval form prototype with grouped sections, compact controls, clear validation, and a fixed footer action area.
+请用 $th-b-ui-skill 生成一个资源管理列表页原型，页面包含筛选区、操作区、数据表格、状态标签和分页。
 ```
 
 ```text
-Use $th-b-ui-skill to generate a Figma-ready prompt for a detail page with a status header, summary card, related tabs, and an operation log.
+请用 $th-b-ui-skill 生成一个审批表单原型，要求分组清晰、控件紧凑、校验明确，并带固定底部操作区。
 ```
 
 ```text
-Use $th-b-ui-skill to produce enterprise-style frontend code with neutral surfaces, compact forms, clear action hierarchy, and explicit loading, empty, and error states.
+请用 $th-b-ui-skill 生成一个详情页的 Figma 提示词，页面包含状态头部、摘要卡片、关联标签页和操作记录区。
 ```
 
-## What This Skill Covers
+```text
+请用 $th-b-ui-skill 生成企业后台风格的前端页面代码，要求中性色表面、紧凑表单、清晰按钮层级，并显式包含加载态、空态和错误态。
+```
 
-This skill guides AI to generate:
+## 这个 Skill 能做什么
 
-- list pages with filter panel, action area, data table, and pagination
-- detail pages with status header, summary blocks, and related tabs
-- create and edit forms with grouped sections and clear action hierarchy
-- drawer-based quick workflows
-- dashboard-style operational pages
-- Figma-ready interface prompts
-- enterprise-style HTML, Vue, or React prototype code
+这个 skill 主要用于指导 AI 生成：
 
-## Design Principles
+- 带筛选区、操作区、表格、分页的列表页
+- 带状态头部、摘要信息、关联标签页的详情页
+- 带分组和明确操作层级的创建/编辑表单
+- 适合快速处理任务的抽屉式工作流
+- 偏运营视角的仪表盘页面
+- 可直接用于设计生成的 Figma 提示词
+- 企业后台风格的 HTML、Vue、React 原型代码
 
-This skill prefers:
+## 设计原则
 
-- neutral, low-noise surfaces
-- one accent color
-- compact density
-- clear action hierarchy
-- stable enterprise page layouts
-- explicit loading, empty, and error states
+这个 skill 偏好的界面风格：
 
-This skill avoids:
+- 中性、低噪音的界面表面
+- 单一强调色
+- 紧凑型信息密度
+- 清晰的按钮层级
+- 稳定的企业后台页面结构
+- 明确的加载态、空态和错误态
 
-- decorative marketing layouts
-- flashy gradients
-- oversized hero sections
-- overly playful UI patterns
+这个 skill 会避免的界面风格：
 
-## Repository Structure
+- 营销页式布局
+- 炫目的渐变
+- 过大的头图区块
+- 过于活泼或装饰化的 UI 风格
+
+## 仓库结构
 
 ```text
 th-b-ui-skill/
@@ -93,53 +93,53 @@ th-b-ui-skill/
     └── ui-spec.md
 ```
 
-### Main Files
+### 主要文件
 
 - `SKILL.md`
-  The core skill definition and main rule set.
+  skill 的核心定义和主规则集。
 
 - `agents/openai.yaml`
-  Display metadata and default prompt for platforms that support skill manifests.
+  skill 平台展示信息和默认提示词配置。
 
 - `HUMAN_GUIDE.md`
-  A human-readable usage guide for teammates and collaborators.
+  面向同事或协作者的人类可读说明文档。
 
-### Reference Files
+### 参考文件
 
 - `references/page-patterns.md`
-  Reusable page archetypes such as list, detail, form, drawer, and dashboard pages.
+  页面模板，包括列表页、详情页、表单页、抽屉页、仪表盘等常见结构。
 
 - `references/internal-mapping.md`
-  Naming semantics and component-family style mappings.
+  命名语义和组件家族风格映射。
 
 - `references/ui-spec.md`
-  More explicit rules for color, buttons, forms, tables, spacing, and interactions.
+  更细的颜色、按钮、表单、表格、间距和交互规则。
 
 - `references/publishing-kit.md`
-  Publishing copy, short descriptions, and example prompts.
+  用于发布到 skill 平台时的简介、卖点和示例提示词。
 
-## Using This Repository
+## 这个仓库怎么用
 
-This repository can be used in several ways:
+这个仓库有几种常见用法：
 
-1. As a local skill folder inside a Codex-compatible skills directory
-2. As a GitHub-backed source for a skills marketplace
-3. As a reusable enterprise UI prompt specification for design and frontend teams
+1. 作为本地 skill 目录，放入兼容 Codex 的 skills 目录中使用
+2. 作为 GitHub 仓库，被 skill 平台从仓库导入
+3. 作为团队共享的企业后台界面规范和提示词规范
 
-## Best Fit Scenarios
+## 适合的使用场景
 
-- generating a management list page
-- designing a detail page with tabs and status
-- creating a configuration or approval form
-- building a quick-create drawer workflow
-- drafting an operational dashboard
-- generating enterprise-style frontend prototypes
+- 生成管理类列表页
+- 设计带状态和标签页的详情页
+- 生成配置页或审批页
+- 设计快速创建或快速编辑抽屉
+- 生成运营型仪表盘
+- 生成企业后台风格的前端原型
 
-## Publishing Notes
+## 发布说明
 
-This repository is structured to work well with skill marketplaces and GitHub-based distribution. The skill is presented as a reusable enterprise UI specification layer rather than a product-specific technical dependency.
+这个仓库已经按 skill 平台和 GitHub 分发的方向组织好了结构。它被设计成一层可复用的企业后台界面规范，而不是某个具体产品实现的技术依赖。
 
-If your platform reads skill metadata, the main entry points are:
+如果平台支持读取 skill 元数据，主要入口文件是：
 
 - `SKILL.md`
 - `agents/openai.yaml`
