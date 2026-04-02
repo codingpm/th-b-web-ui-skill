@@ -1,6 +1,6 @@
-# TH B UI Skill
+# TH B Web UI Skill
 
-`th-b-ui-skill` 是一个面向企业后台原型生成的 skill。
+`th-b-web-ui-skill` 是一个面向企业后台原型生成的 skill。
 
 它的目标是把内部系统常见的页面结构、命名习惯、组件语义和界面风格提炼成一套可复用规则，让 AI 生成出来的原型更像内部业务系统。
 
@@ -42,13 +42,13 @@
 最简单的调用方式：
 
 ```text
-请用 $th-b-ui-skill 生成一个后台页面原型，要求贴近内部企业后台设计规范和标准化页面结构。
+请用 $th-b-web-ui-skill 生成一个后台页面原型，要求贴近企业后台设计规范和标准化页面结构。
 ```
 
 更推荐的调用方式：
 
 ```text
-请用 $th-b-ui-skill 生成一个资源管理列表页原型。
+请用 $th-b-web-ui-skill 生成一个资源管理列表页原型。
 
 要求：
 - 页面结构贴近内部后台系统
@@ -74,17 +74,17 @@
 
 ## 目录说明
 
-- [SKILL.md](/Users/mashaoguang/.codex/skills/th-b-ui-skill/SKILL.md)
+- [SKILL.md](/Users/mashaoguang/.codex/skills/th-b-web-ui-skill/SKILL.md)
   skill 的核心规则定义
-- [openai.yaml](/Users/mashaoguang/.codex/skills/th-b-ui-skill/agents/openai.yaml)
+- [openai.yaml](/Users/mashaoguang/.codex/skills/th-b-web-ui-skill/agents/openai.yaml)
   skills 平台展示信息和默认 prompt
-- [page-patterns.md](/Users/mashaoguang/.codex/skills/th-b-ui-skill/references/page-patterns.md)
+- [page-patterns.md](/Users/mashaoguang/.codex/skills/th-b-web-ui-skill/references/page-patterns.md)
   常见页面类型模板
-- [internal-mapping.md](/Users/mashaoguang/.codex/skills/th-b-ui-skill/references/internal-mapping.md)
+- [internal-mapping.md](/Users/mashaoguang/.codex/skills/th-b-web-ui-skill/references/internal-mapping.md)
   内部命名语义和组件映射方式
-- [publishing-kit.md](/Users/mashaoguang/.codex/skills/th-b-ui-skill/references/publishing-kit.md)
+- [publishing-kit.md](/Users/mashaoguang/.codex/skills/th-b-web-ui-skill/references/publishing-kit.md)
   对外发布文案和示例 prompt
 
 ## 一句话总结
 
-如果你的目标是“让 AI 生成出来的后台原型更像内部企业设计体系”，那就用 `th-b-ui-skill`。
+如果你的目标是“让 AI 生成出来的后台原型更像成熟的企业后台设计体系”，那就用 `th-b-web-ui-skill`。

@@ -1,4 +1,4 @@
 interface:
-  display_name: "TH B UI Skill"
+  display_name: "TH B Web UI Skill"
   short_description: "Generate enterprise UI prototypes with internal-system patterns"
-  default_prompt: "Use $th-b-ui-skill to design a desktop enterprise prototype that follows internal component naming habits, page structure, and admin UI patterns."
+  default_prompt: "Use $th-b-web-ui-skill to design a desktop enterprise prototype that follows structured page patterns, clear action hierarchy, and stable admin UI rules."

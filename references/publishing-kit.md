@@ -34,19 +34,19 @@ This skill helps Codex generate prototypes, wireframes, Figma prompts, and front
 ## Example Prompts
 
 ```text
-Use $th-b-ui-skill to design a desktop admin list page for resource management. Keep the page close to an internal base-form plus data-table pattern with a filter panel, action strip, table, status tags, and pagination.
+Use $th-b-web-ui-skill to design a desktop admin list page for resource management. Keep the page close to a base-form plus data-table pattern with a filter panel, action strip, table, status tags, and pagination.
 ```
 
 ```text
-Use $th-b-ui-skill to create an approval form prototype. Use grouped cards, compact form sections, business-aware selectors, and a fixed footer action area.
+Use $th-b-web-ui-skill to create an approval form prototype. Use grouped cards, compact form sections, business-aware selectors, and a fixed footer action area.
 ```
 
 ```text
-Use $th-b-ui-skill to generate a Figma-ready prompt for a resource detail page with a status header, summary card, tabs, related records, and an operation log.
+Use $th-b-web-ui-skill to generate a Figma-ready prompt for a resource detail page with a status header, summary card, tabs, related records, and an operation log.
 ```
 
 ```text
-Use $th-b-ui-skill to produce a Vue prototype for a management page. Keep the page enterprise, restrained, and structurally similar to an internal admin system rather than a consumer app.
+Use $th-b-web-ui-skill to produce a Vue prototype for a management page. Keep the page enterprise, restrained, and structurally similar to a mature admin system rather than a consumer app.
 ```
 
 ## Positioning Notes

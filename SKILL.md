@@ -1,9 +1,9 @@
 ---
-name: th-b-ui-skill
+name: th-b-web-ui-skill
 description: Generate product prototypes that visually and structurally match an internal enterprise component system through reusable UI rules, naming semantics, and page patterns. Use when Codex needs to create UI mockups, wireframes, Figma drafts, HTML, or frontend code that should feel like an internal admin platform, especially for list pages, detail pages, search forms, dialogs, drawers, tables, tabs, and dashboard-style operational interfaces.
 ---
 
-# TH B UI Skill
+# TH B Web UI Skill
 
 Generate prototypes that feel like a mature internal business system rather than a generic consumer app.
 
