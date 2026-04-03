@@ -9,15 +9,47 @@ Generate prototypes that feel like a mature internal business system rather than
 
 Treat this skill as a design-rules layer. Reproduce the structure, density, hierarchy, naming habits, and component selection patterns of the internal system, but do not depend on private registries, internal URLs, or unpublished component APIs unless the user explicitly provides them in the current task.
 
+## Input Sufficiency Check
+
+Before generating a web prototype, first check whether the request contains enough information to support a strong page structure.
+
+Important inputs include:
+
+- platform
+- page type
+- target users
+- business object
+- core goal or task
+- key actions
+- key fields or information blocks
+- constraints or preferences
+
+If several of these are missing, do not jump directly into page generation. First switch to clarification mode.
+
+When available, follow the intake behavior used by `demo-intake-skill`.
+If that skill is not available, apply the same clarification behavior locally:
+
+- ask one question at a time
+- base each next question on the user's latest answer
+- ask no more than 8 questions
+- stop once the key structure is sufficiently clear
+- summarize the result as a structured requirement brief before generating
+
+If the request is already sufficiently clear and the platform is web, proceed directly to generation.
+
 ## Workflow
 
 Follow this sequence:
 
-1. Identify the page type.
-2. Infer the dominant component pattern.
-3. Apply the layout and density rules in this skill.
-4. Generate the prototype in the requested format.
-5. Briefly self-check that the result still feels like an internal enterprise UI.
+1. Check whether the request is complete enough for web page generation.
+2. If not, clarify the requirement through short guided questioning.
+3. Convert the result into a structured requirement brief.
+4. Confirm the platform is web.
+5. Identify the page type.
+6. Infer the dominant component pattern.
+7. Apply the layout and density rules in this skill.
+8. Generate the prototype in the requested format.
+9. Briefly self-check that the result still feels like an internal enterprise UI.
 
 If requirements are incomplete, infer the most likely enterprise pattern instead of blocking:
 
